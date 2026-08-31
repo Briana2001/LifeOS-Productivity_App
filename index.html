@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeOS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-zinc-900 text-zinc-100">
+    <div class="flex min-h-screen">
+      <aside
+        class="w-60 flex flex-col shrink-0 border border-zinc-800 bg-zinc-900"
+      >
+        <div class="flex items-center gap-3 py-6 px-3 border-b border-zinc-800">
+          <div
+            class="flex h-9 w-9 items-center justify-center rounded-lg text-zinc-950 font-bold"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2.5em"
+              height="2.5em"
+              viewBox="0 0 640 640"
+            >
+              <path d="M0 0h640v640H0z" fill="none" />
+              <path
+                fill="#22d3ee"
+                d="M321.5 72c-137 0-248 111-248 248s111 248 248 248s248-111 248-248s-111-248-248-248M272 446.8L146.3 321.1L272 195.4l35.2 35.4L283 255l-11.1-11.1l-77.2 77.2l77.2 77.2l26.6-26.6l-53.1-52.9l24.4-24.4l77.2 77.2zm99-2.2l-35.2-35.2l24.1-24.4l11.1 11.1l77.2-77.2l-77.2-77.2l-26.5 26.5l53.1 52.9l-24.4 24.4l-77.2-77.2l75-75L496.7 319z"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <h1 class="text-2xl font-semibold tracking-wide">
+              LIFE<span class="text-[#22D3EE]">OS</span>
+            </h1>
+            <p class="text-xs text-zinc-500">Your Life. Optimized.</p>
+          </div>
+        </div>
+
+        <nav class="flex flex-col gap-2 p-4">
+          <a
+              class="items-center gap-2 px-4 py-2 rounded-lg flex hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="#"
+          >
+            <span class="text-white"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 32 32"
+              >
+                <path d="M0 0h32v32H0z" fill="none" />
+                <path
+                  fill="#fff"
+                  d="M24 21h2v5h-2zm-4-5h2v10h-2zm-9 10a5.006 5.006 0 0 1-5-5h2a3 3 0 1 0 3-3v-2a5 5 0 0 1 0 10"
+                />
+                <path
+                  fill="#fff"
+                  d="M28 2H4a2 2 0 0 0-2 2v24a2 2 0 0 0 2 2h24a2.003 2.003 0 0 0 2-2V4a2 2 0 0 0-2-2m0 9H14V4h14ZM12 4v7H4V4ZM4 28V13h24l.002 15Z"
+                />
+              </svg>
+            </span>
+            <span >Dashboard</span></a
+          >
+
+          <a
+            class="items-center gap-2 px-4 py-2 rounded-lg flex hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="tasks.html"
+          >
+            <span class="text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 28 28"
+              >
+                <path d="M0 0h28v28H0z" fill="none" />
+                <path
+                  fill="#fff"
+                  d="M4 5.25A3.25 3.25 0 0 1 7.25 2h13.5A3.25 3.25 0 0 1 24 5.25v12.129q-.181.12-.341.28L22.5 18.818V5.25a1.75 1.75 0 0 0-1.75-1.75H7.25A1.75 1.75 0 0 0 5.5 5.25v17.5c0 .966.784 1.75 1.75 1.75h8.068l1.5 1.5H7.25A3.25 3.25 0 0 1 4 22.75zm6.5 3.5a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0m-1.25 6.5a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5m0 5.25a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5M12.75 8a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5zM12 14a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 12 14m.75 4.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5zm13.03 1.28l-6 6a.75.75 0 0 1-1.06 0l-2.998-2.998a.75.75 0 0 1 1.06-1.06l2.468 2.467l5.47-5.47a.75.75 0 1 1 1.06 1.061"
+                />
+              </svg>
+            </span>
+            <span>Tasks</span></a
+          >
+
+          <a
+            class="items-center gap-2 px-4 py-2 rounded-lg flex hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="goals.html"
+          >
+            <span class="text-white"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 32 32"
+              >
+                <path d="M0 0h32v32H0z" fill="none" />
+                <path
+                  fill="#fff"
+                  d="m29.9 16.4l-6 12c-.2.3-.5.6-.9.6H10c-.6 0-1-.4-1-1s.4-1 1-1h12.4l5.5-11l-5.5-11H10c-.6 0-1-.4-1-1s.4-1 1-1h13q.6 0 .9.6l6 12q.15.45 0 .9zM10 22c0 .6.4 1 1 1h11v-2H11c-.6 0-1 .4-1 1m8-7H7c-.6 0-1 .4-1 1s.4 1 1 1h11zm4-4V9H11c-.6 0-1 .4-1 1s.4 1 1 1zM3 15c-.6 0-1 .4-1 1s.4 1 1 1s1-.4 1-1s-.4-1-1-1m3 6c-.6 0-1 .4-1 1s.4 1 1 1s1-.4 1-1s-.4-1-1-1m0-10c.6 0 1-.4 1-1s-.4-1-1-1s-1 .4-1 1s.4 1 1 1"
+                />
+              </svg>
+            </span>
+            <span>Goals</span></a
+          >
+
+          <a
+            class="items-center gap-2 px-4 py-2 rounded-lg flex transition duration-300 ease-in-out hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="habit.html"
+          >
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 1200 1200"
+              >
+                <path d="M0 0h1200v1200H0z" fill="none" />
+                <path
+                  fill="#fff"
+                  d="M381.64 1200C135.779 1061.434 71.049 930.278 108.057 751.148c27.321-132.271 116.782-239.886 125.36-371.903c38.215 69.544 54.183 119.691 58.453 192.364C413.413 422.695 493.731 216.546 498.487 0c0 0 316.575 186.01 337.348 466.98c27.253-57.913 40.972-149.892 13.719-209.504c81.757 59.615 560.293 588.838-64.818 942.524c117.527-228.838 30.32-537.611-173.739-680.218c13.628 61.319-10.265 290.021-100.542 390.515c25.014-167.916-23.8-238.918-23.8-238.918s-16.754 94.054-81.758 189.065c-59.36 86.762-100.49 178.847-23.257 339.556"
+                />
+              </svg>
+            </span>
+            <span>Habits</span></a
+          >
+
+          <a
+            class="items-center gap-2 px-4 py-2 rounded-lg flex transition duration-300 ease-in-out hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="brainDump.html"
+          >
+            <span class="text-white"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 16 16"
+              >
+                <path d="M0 0h16v16H0z" fill="none" />
+                <g fill="#fff">
+                  <path
+                    d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"
+                  />
+                  <path
+                    d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span>Brain Dump</span></a
+          >
+
+          <a
+            class="items-center gap-2 px-4 py-2 rounded-lg flex transition duration-300 ease-in-out hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="progress.html"
+          >
+            <span class="text-white"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 48 48"
+              >
+                <path d="M0 0h48v48H0z" fill="none" />
+                <g fill="#fff">
+                  <path
+                    d="M19 21a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3zM6 33a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M32 9a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3zm3-1a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z"
+                    clip-rule="evenodd"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span>Progress</span></a
+          >
+
+          <a
+            class="items-center gap-2 px-4 py-2 rounded-lg flex transition duration-300 ease-in-out hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="calendar.html"
+          >
+            <span class="text-white"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 48 48"
+              >
+                <path d="M0 0h48v48H0z" fill="none" />
+                <path
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M24.251 30.667c0 2.963 2.37 5.333 5.334 5.333s5.135-2.37 5.135-5.333v-5.334c0-2.963-2.37-5.333-5.135-5.333s-5.334 2.37-5.334 5.333zM13.28 22.2l4-2.2m0 0v16"
+                />
+                <g
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="32.5" cy="11" r="2.5" />
+                  <circle cx="15.5" cy="11" r="2.5" />
+                  <rect width="37" height="37" x="5.5" y="5.5" rx="4" ry="4" />
+                </g>
+              </svg>
+            </span>
+            <span>Calendar</span></a
+          >
+
+          <a
+            class="items-center gap-2 px-4 py-2 rounded-lg flex transition duration-300 ease-in-out hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="focusMode.html"
+          >
+            <span class="text-white"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 2048 2048"
+              >
+                <path d="M0 0h2048v2048H0z" fill="none" />
+                <path
+                  fill="#fff"
+                  d="M640 640V256h128v512H256V640zm-384 768v-128h512v512H640v-384zm1024 384v-512h512v128h-384v384zm128-1152h384v128h-512V256h128z"
+                />
+              </svg>
+            </span>
+            <span>Focus Mode</span></a
+          >
+
+          <a
+            class="items-center gap-2 px-4 py-2 rounded-lg flex transition duration-300 ease-in-out hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="journal.html"
+          >
+            <span class="text-white"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 32 32"
+              >
+                <path d="M0 0h32v32H0z" fill="none" />
+                <path
+                  fill="#fff"
+                  d="M4 20v2h3.586L2 27.586L3.414 29L9 23.414V27h2v-7zm15-10h7v2h-7zm0 5h7v2h-7zm0 5h7v2h-7z"
+                />
+                <path
+                  fill="#fff"
+                  d="M28 5H4a2 2 0 0 0-2 2v10h2V7h11v20h13a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2M17 25V7h11l.002 18Z"
+                />
+              </svg>
+            </span>
+            <span>Journal</span></a
+          >
+
+          <a
+            class="items-center gap-2 px-4 py-2 rounded-lg flex transition duration-300 ease-in-out hover:text-[#22D3EE] hover:bg-[#1e1e22]"
+            href="settings.html"
+          >
+            <span class="text-white"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.1em"
+                height="1.1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M0 0h1024v1024H0z" fill="none" />
+                <path
+                  fill="#fff"
+                  d="M600.7 64a32 32 0 0 1 30.5 22.2l35.2 109.4a348 348 0 0 1 42.4 24.5l112.4-24.2a32 32 0 0 1 34.4 15.4l88.7 153.5a32 32 0 0 1-4 37.5l-77.1 85.1a357 357 0 0 1 0 49l77 85.3a32 32 0 0 1 4.1 37.5l-88.7 153.6a32 32 0 0 1-34.4 15.3l-112.4-24.2q-20.2 13.6-42.4 24.5l-35.2 109.4a32 32 0 0 1-30.5 22.2H423.3a32 32 0 0 1-30.5-22.2l-35.1-109.3a352 352 0 0 1-42.6-24.7l-112.3 24.3a32 32 0 0 1-34.4-15.4L79.7 659.2a32 32 0 0 1 4-37.5l77.1-85.3a357 357 0 0 1 0-48.8l-77-85.3a32 32 0 0 1-4.1-37.5l88.7-153.6a32 32 0 0 1 34.4-15.3l112.3 24.3a355 355 0 0 1 42.6-24.7l35.2-109.3A32 32 0 0 1 423.2 64zm-23.4 64H446.7l-36.3 113l-24.5 12a294 294 0 0 0-34.9 20.2l-22.6 15.3l-116.2-25l-65.3 113l79.7 88.3l-2 27.1a293 293 0 0 0 0 40.2l2 27.1l-79.8 88.2L212 760.6l116.2-25l22.7 15.2a294 294 0 0 0 34.8 20.1l24.5 12L446.7 896h130.7L614 782.8l24.4-11.9a288 288 0 0 0 34.8-20l22.6-15.3l116.3 25l65.2-113.2l-79.7-88.2l2-27.1a293 293 0 0 0 0-40.3l-2-27.1l79.8-88.1L812 263.4l-116.3 25l-22.6-15.2a288 288 0 0 0-34.8-20.1L614 241zM512 320a192 192 0 1 1 0 384a192 192 0 0 1 0-384m0 64a128 128 0 1 0 0 256a128 128 0 0 0 0-256"
+                />
+              </svg>
+            </span>
+            <span>Settings</span></a
+          >
+        </nav>
+      </aside>
+
+
+<!-- Nav Sorted  -->
+
+
+      <main>
+        <section class="intro">
+          <div>
+            <h2 id="greeting">Good Morning Briana</h2>
+            <p>What goal would you like to accomplish first?</p>
+          </div>
+
+          <div>
+            <h2 id="quote">Clocks Ticking Bri, Time Waits For Noone</h2>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  
+</html>
