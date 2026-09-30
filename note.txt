@@ -1,8 +1,740 @@
-#202020 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-#f4f4f5;
+    <title>LifeOS</title>
 
-#1e1e22
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-black text-zinc-100">
+    <div class="flex min-h-screen">
+
+      <!-- ================= SIDEBAR ================= -->
+
+      <aside class="w-60 flex flex-col shrink-0 border-r border-zinc-800">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-3 py-6 px-3 border-b border-zinc-800">
+          <div class="flex h-9 w-9 items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2.5em"
+              height="2.5em"
+              viewBox="0 0 640 640"
+            >
+              <path d="M0 0h640v640H0z" fill="none" />
+              <path
+                fill="#0BBFD6"
+                d="M321.5 72c-137 0-248 111-248 248s111 248 248 248s248-111 248-248s-111-248-248-248M272 446.8L146.3 321.1L272 195.4l35.2 35.4L283 255l-11.1-11.1l-77.2 77.2l77.2 77.2l26.6-26.6l-53.1-52.9l24.4-24.4l77.2 77.2zm99-2.2l-35.2-35.2l24.1-24.4l11.1 11.1l77.2-77.2l-77.2-77.2l-26.5 26.5l53.1 52.9l-24.4 24.4l-77.2-77.2l75-75L496.7 319z"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <h1 class="text-2xl font-semibold tracking-wide">
+              LIFE<span class="text-[#0BBFD6]">OS</span>
+            </h1>
+
+            <p class="text-xs text-zinc-500">
+              Your Life. Optimized.
+            </p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex flex-col gap-2 p-4">
+
+          <a
+            href="#"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>
+              <!-- Dashboard icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.1em" height="1.1em" viewBox="0 0 32 32">
+                <path d="M0 0h32v32H0z" fill="none" />
+                <path fill="#fff" d="M24 21h2v5h-2zm-4-5h2v10h-2zm-9 10a5.006 5.006 0 0 1-5-5h2a3 3 0 1 0 3-3v-2a5 5 0 0 1 0 10" />
+                <path fill="#fff" d="M28 2H4a2 2 0 0 0-2 2v24a2 2 0 0 0 2 2h24a2.003 2.003 0 0 0 2-2V4a2 2 0 0 0-2-2m0 9H14V4h14ZM12 4v7H4V4ZM4 28V13h24l.002 15Z" />
+              </svg>
+            </span>
+
+            <span>Dashboard</span>
+          </a>
+
+          <a
+            href="tasks.html"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.1em" height="1.1em" viewBox="0 0 28 28">
+                <path d="M0 0h28v28H0z" fill="none" />
+                <path fill="#fff" d="M4 5.25A3.25 3.25 0 0 1 7.25 2h13.5A3.25 3.25 0 0 1 24 5.25v12.129q-.181.12-.341.28L22.5 18.818V5.25a1.75 1.75 0 0 0-1.75-1.75H7.25A1.75 1.75 0 0 0 5.5 5.25v17.5c0 .966.784 1.75 1.75 1.75h8.068l1.5 1.5H7.25A3.25 3.25 0 0 1 4 22.75z" />
+              </svg>
+            </span>
+
+            <span>Tasks</span>
+          </a>
+
+          <a
+            href="goals.html"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>🎯</span>
+            <span>Goals</span>
+          </a>
+
+          <a
+            href="habit.html"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>🔥</span>
+            <span>Habits</span>
+          </a>
+
+          <a
+            href="brainDump.html"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>🧠</span>
+            <span>Brain Dump</span>
+          </a>
+
+          <a
+            href="progress.html"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>📊</span>
+            <span>Progress</span>
+          </a>
+
+          <a
+            href="calendar.html"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>📅</span>
+            <span>Calendar</span>
+          </a>
+
+          <a
+            href="focusMode.html"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>⛶</span>
+            <span>Focus Mode</span>
+          </a>
+
+          <a
+            href="journal.html"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>📝</span>
+            <span>Journal</span>
+          </a>
+
+          <a
+            href="settings.html"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 hover:text-[#22D3EE] hover:bg-[#050508]"
+          >
+            <span>⚙️</span>
+            <span>Settings</span>
+          </a>
+
+        </nav>
+      </aside>
 
 
+      <!-- ================= MAIN ================= -->
 
+      <main class="flex-1 min-w-0">
+
+        <!-- TOP BAR -->
+
+        <header class="flex w-full items-center justify-between gap-5 p-4 border-b border-zinc-900">
+
+          <!-- Search -->
+
+          <div class="relative w-80">
+
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500">
+              🔍
+            </span>
+
+            <input
+              id="search"
+              type="text"
+              placeholder="Search anything..."
+              class="w-full rounded-lg bg-[#08090A] border border-[#3C7F91] text-zinc-100 text-sm pl-9 pr-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#22D3EE]"
+            />
+
+          </div>
+
+
+          <!-- Actions -->
+
+          <div class="flex items-center gap-4">
+
+            <button
+              class="text-white hover:text-[#22D3EE] transition"
+              aria-label="Notifications"
+            >
+              🔔
+            </button>
+
+            <button
+              class="text-white hover:text-[#22D3EE] transition"
+              aria-label="Focus mode"
+            >
+              ⏱️
+            </button>
+
+            <button
+              id="quick-add"
+              class="bg-[#0BBFD6] hover:bg-[#22D3EE] text-[#1e1e22] font-bold py-2 px-5 rounded-lg transition"
+            >
+              + Add
+            </button>
+
+          </div>
+
+        </header>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section class="p-4">
+
+          <!-- ROW 1 -->
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+
+
+            <!-- GREETING + QUOTE -->
+
+            <article class="rounded-xl border border-zinc-800 bg-[#050508] p-5">
+
+              <h2
+                id="greeting"
+                class="text-xl font-bold text-white"
+              >
+                Good Morning, Briana 🖤✨
+              </h2>
+
+              <p
+                id="date"
+                class="text-sm text-zinc-500 mt-1"
+              >
+                Saturday 13 September
+              </p>
+
+
+              <div class="mt-6 flex gap-3">
+
+                <div class="text-[#0BBFD6] text-xl">
+                  ❝
+                </div>
+
+                <div>
+
+                  <p
+                    id="quote"
+                    class="text-sm leading-6 text-zinc-400"
+                  >
+                    Discipline is choosing between what you want now
+                    and what you want most.
+                  </p>
+
+                  <p class="text-[#0BBFD6] text-xs mt-3">
+                    — Unknown
+                  </p>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- TODAY'S PROGRESS -->
+
+            <article class="rounded-xl border border-zinc-800 bg-[#050508] p-5">
+
+              <h2 class="text-sm font-semibold text-white">
+                Today's Progress
+              </h2>
+
+              <div class="mt-5 flex flex-col items-center">
+
+                <div class="relative size-28">
+
+                  <svg
+                    class="size-full -rotate-90"
+                    viewBox="0 0 100 100"
+                  >
+
+                    <!-- Track -->
+
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="42"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="8"
+                      class="text-zinc-900"
+                    />
+
+                    <!-- Progress -->
+
+                    <circle
+                      id="progress-circle"
+                      cx="50"
+                      cy="50"
+                      r="42"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="8"
+                      stroke-linecap="round"
+                      stroke-dasharray="263.89"
+                      stroke-dashoffset="87.08"
+                      class="text-[#0BBFD6]"
+                    />
+
+                  </svg>
+
+
+                  <div class="absolute inset-0 grid place-items-center">
+
+                    <span
+                      id="progress-percent"
+                      class="text-2xl font-semibold text-white"
+                    >
+                      67%
+                    </span>
+
+                  </div>
+
+                </div>
+
+
+                <p
+                  id="progress-text"
+                  class="mt-3 text-xs text-zinc-400"
+                >
+                  4 of 6 tasks completed
+                </p>
+
+              </div>
+
+            </article>
+
+
+            <!-- STREAKS -->
+
+            <article class="rounded-xl border border-zinc-800 bg-[#050508] p-5">
+
+              <h2 class="text-sm font-semibold text-white">
+                Streaks 🔥
+              </h2>
+
+
+              <div class="mt-5 space-y-4 text-sm">
+
+                <div class="flex justify-between">
+
+                  <span class="text-zinc-400">
+                    📚 Study
+                  </span>
+
+                  <span
+                    id="study-streak"
+                    class="text-white font-medium"
+                  >
+                    12 days
+                  </span>
+
+                </div>
+
+
+                <div class="flex justify-between">
+
+                  <span class="text-zinc-400">
+                    🚲 Exercise
+                  </span>
+
+                  <span
+                    id="exercise-streak"
+                    class="text-white font-medium"
+                  >
+                    15 days
+                  </span>
+
+                </div>
+
+
+                <div class="flex justify-between">
+
+                  <span class="text-zinc-400">
+                    💻 Coding
+                  </span>
+
+                  <span
+                    id="coding-streak"
+                    class="text-white font-medium"
+                  >
+                    10 days
+                  </span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- ROW 2 -->
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+
+
+            <!-- BIG 3 -->
+
+            <article class="lg:col-span-1 rounded-xl border border-zinc-800 bg-[#050508] p-5">
+
+              <div class="flex items-center justify-between">
+
+                <h2 class="font-semibold text-white">
+                  Today's Big 3
+                </h2>
+
+                <span class="text-xs text-[#0BBFD6]">
+                  Focus
+                </span>
+
+              </div>
+
+
+              <div class="mt-5 space-y-4">
+
+                <label class="flex items-center gap-3">
+
+                  <input
+                    type="checkbox"
+                    class="accent-[#0BBFD6]"
+                  />
+
+                  <span class="text-sm text-zinc-300">
+                    Study Data Structures
+                  </span>
+
+                </label>
+
+
+                <label class="flex items-center gap-3">
+
+                  <input
+                    type="checkbox"
+                    class="accent-[#0BBFD6]"
+                  />
+
+                  <span class="text-sm text-zinc-300">
+                    Finish LifeOS Dashboard
+                  </span>
+
+                </label>
+
+
+                <label class="flex items-center gap-3">
+
+                  <input
+                    type="checkbox"
+                    class="accent-[#0BBFD6]"
+                  />
+
+                  <span class="text-sm text-zinc-300">
+                    Complete project work
+                  </span>
+
+                </label>
+
+              </div>
+
+            </article>
+
+
+            <!-- UPCOMING -->
+
+            <article class="rounded-xl border border-zinc-800 bg-[#050508] p-5">
+
+              <div class="flex items-center justify-between">
+
+                <h2 class="font-semibold text-white">
+                  Upcoming
+                </h2>
+
+                <span class="text-xs text-zinc-500">
+                  Deadlines
+                </span>
+
+              </div>
+
+
+              <div class="mt-5 space-y-4">
+
+                <div>
+                  <p class="text-sm text-zinc-300">
+                    COS 204 mid-assessment
+                  </p>
+
+                  <p class="text-xs text-zinc-500 mt-1">
+                    October 19
+                  </p>
+                </div>
+
+
+                <div>
+                  <p class="text-sm text-zinc-300">
+                    LifeOS V1 Deadline
+                  </p>
+
+                  <p class="text-xs text-zinc-500 mt-1">
+                    October 20
+                  </p>
+                </div>
+
+
+                <div>
+                  <p class="text-sm text-zinc-300">
+                    Tech Concept Challenge
+                  </p>
+
+                  <p class="text-xs text-zinc-500 mt-1">
+                    October 23
+                  </p>
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- HABIT TRACKER -->
+
+            <article class="rounded-xl border border-zinc-800 bg-[#050508] p-5">
+
+              <div class="flex items-center justify-between">
+
+                <h2 class="font-semibold text-white">
+                  Habit Tracker
+                </h2>
+
+                <a
+                  href="habit.html"
+                  class="text-xs text-[#0BBFD6] hover:text-[#22D3EE]"
+                >
+                  View All
+                </a>
+
+              </div>
+
+
+              <div class="mt-5 space-y-4">
+
+                <div class="flex justify-between items-center">
+
+                  <span class="text-sm text-zinc-400">
+                    Study
+                  </span>
+
+                  <span class="text-xs text-zinc-500">
+                    ● ● ● ● ● ● ●
+                  </span>
+
+                </div>
+
+
+                <div class="flex justify-between items-center">
+
+                  <span class="text-sm text-zinc-400">
+                    Coding
+                  </span>
+
+                  <span class="text-xs text-zinc-500">
+                    ● ● ● ● ● ● ○
+                  </span>
+
+                </div>
+
+
+                <div class="flex justify-between items-center">
+
+                  <span class="text-sm text-zinc-400">
+                    Reflection
+                  </span>
+
+                  <span class="text-xs text-zinc-500">
+                    ● ● ● ● ● ○ ○
+                  </span>
+
+                </div>
+
+
+                <div class="flex justify-between items-center">
+
+                  <span class="text-sm text-zinc-400">
+                    Workout
+                  </span>
+
+                  <span class="text-xs text-zinc-500">
+                    ● ● ● ● ● ● ●
+                  </span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- ROW 3 -->
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+
+            <!-- TASKS -->
+
+            <article class="lg:col-span-2 rounded-xl border border-zinc-800 bg-[#050508] p-5">
+
+              <div class="flex items-center justify-between">
+
+                <h2 class="font-semibold text-white">
+                  Today's Tasks
+                </h2>
+
+                <a
+                  href="tasks.html"
+                  class="text-xs text-[#0BBFD6] hover:text-[#22D3EE]"
+                >
+                  View All
+                </a>
+
+              </div>
+
+
+              <div
+                id="task-list"
+                class="mt-5 space-y-3"
+              >
+
+                <div class="flex items-center justify-between border-b border-zinc-900 pb-3">
+
+                  <div class="flex items-center gap-3">
+
+                    <input
+                      type="checkbox"
+                      class="accent-[#0BBFD6]"
+                    />
+
+                    <span class="text-sm text-zinc-300">
+                      Review today's priorities
+                    </span>
+
+                  </div>
+
+                  <span class="text-xs text-zinc-600">
+                    30 min
+                  </span>
+
+                </div>
+
+
+                <div class="flex items-center justify-between border-b border-zinc-900 pb-3">
+
+                  <div class="flex items-center gap-3">
+
+                    <input
+                      type="checkbox"
+                      class="accent-[#0BBFD6]"
+                    />
+
+                    <span class="text-sm text-zinc-300">
+                      Work on LifeOS
+                    </span>
+
+                  </div>
+
+                  <span class="text-xs text-zinc-600">
+                    1 hr
+                  </span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- QUICK ADD + DAILY QUOTE -->
+
+            <div class="space-y-4">
+
+
+              <!-- QUICK ADD -->
+
+              <article class="rounded-xl border border-zinc-800 bg-[#050508] p-5">
+
+                <h2 class="font-semibold text-white">
+                  Quick Add
+                </h2>
+
+                <p class="text-xs text-zinc-500 mt-1">
+                  Capture something quickly.
+                </p>
+
+
+                <button
+                  id="dashboard-add"
+                  class="mt-5 w-full bg-[#0BBFD6] hover:bg-[#22D3EE] text-[#1e1e22] font-bold py-2 rounded-lg transition"
+                >
+                  + Add Task
+                </button>
+
+              </article>
+
+
+              <!-- DAILY QUOTE -->
+
+              <article class="rounded-xl border border-zinc-800 bg-[#050508] p-5">
+
+                <p class="text-xs uppercase tracking-wider text-[#0BBFD6]">
+                  Daily Reminder
+                </p>
+
+                <p class="mt-3 text-sm leading-6 text-zinc-400">
+                  You don't need to fix your entire life today.
+                  Just make today's choices count.
+                </p>
+
+              </article>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+  </body>
+</html>
